@@ -1,0 +1,823 @@
+{
+ "generated_at": "2026-11-19 15:10 UTC",
+ "data": {
+  "first_date": "2000-08-23",
+  "last_date": "2026-11-19"
+ },
+ "cost_bps": 2.0,
+ "assets": [
+  {
+   "ticker": "ES=F",
+   "name": "S&P 500 E-mini",
+   "out_of_sample_start": "2003-09-11",
+   "metrics": {
+    "buy_and_hold": {
+     "cagr": 0.08938,
+     "volatility": 0.18714,
+     "sharpe": 0.55123,
+     "max_drawdown": -0.57113,
+     "total_return": 6.30118,
+     "years": 23.22222,
+     "calmar": 0.1565,
+     "time_invested": 1.0,
+     "switches": 0
+    },
+    "hmm_filter": {
+     "cagr": 0.09048,
+     "volatility": 0.14465,
+     "sharpe": 0.67148,
+     "max_drawdown": -0.27285,
+     "total_return": 6.47463,
+     "years": 23.22222,
+     "calmar": 0.33161,
+     "time_invested": 0.93865,
+     "switches": 100
+    },
+    "vol_rule": {
+     "cagr": 0.03365,
+     "volatility": 0.08974,
+     "sharpe": 0.41379,
+     "max_drawdown": -0.21714,
+     "total_return": 1.15661,
+     "years": 23.22222,
+     "calmar": 0.15496,
+     "time_invested": 0.53059,
+     "switches": 243
+    },
+    "hmm_lookahead": {
+     "cagr": 0.13051,
+     "volatility": 0.138,
+     "sharpe": 0.95822,
+     "max_drawdown": -0.24735,
+     "total_return": 16.26423,
+     "years": 23.22222,
+     "calmar": 0.52764,
+     "time_invested": 0.94173,
+     "switches": 28
+    }
+   },
+   "threshold_sensitivity": [
+    {
+     "threshold": 0.3,
+     "sharpe": 0.69092,
+     "cagr": 0.09049,
+     "max_drawdown": -0.28282
+    },
+    {
+     "threshold": 0.5,
+     "sharpe": 0.67148,
+     "cagr": 0.09048,
+     "max_drawdown": -0.27285
+    },
+    {
+     "threshold": 0.7,
+     "sharpe": 0.67879,
+     "cagr": 0.09388,
+     "max_drawdown": -0.2966
+    }
+   ],
+   "full_sample": {
+    "k": 3,
+    "names": [
+     "calm",
+     "normal",
+     "stressed"
+    ],
+    "bic": {
+     "1": 21334.79868,
+     "2": 18583.55379,
+     "3": 17981.96049
+    },
+    "transition": [
+     [
+      0.96751,
+      0.03248,
+      1e-05
+     ],
+     [
+      0.03393,
+      0.95839,
+      0.00769
+     ],
+     [
+      0.0,
+      0.04996,
+      0.95004
+     ]
+    ],
+    "annual_vol": [
+     0.08409,
+     0.19,
+     0.49382
+    ],
+    "annual_mean": [
+     0.2857,
+     -0.06361,
+     -0.64101
+    ],
+    "expected_duration_days": [
+     30.77524,
+     24.03137,
+     20.01502
+    ]
+   },
+   "walk_forward_k": {
+    "2": 1,
+    "3": 46
+   },
+   "regime_stats_oos": [
+    {
+     "regime": "calm",
+     "share_of_days": 0.53469,
+     "annual_return": 0.18827,
+     "annual_vol": 0.08539
+    },
+    {
+     "regime": "normal",
+     "share_of_days": 0.40311,
+     "annual_return": 0.0225,
+     "annual_vol": 0.18665
+    },
+    {
+     "regime": "stressed",
+     "share_of_days": 0.0622,
+     "annual_return": -0.38791,
+     "annual_vol": 0.52476
+    }
+   ],
+   "events": [
+    {
+     "event": "Global financial crisis",
+     "start": "2008-09-15",
+     "end": "2009-03-31",
+     "avg_p_stressed": 0.88148,
+     "share_flagged": 0.9635,
+     "days_to_flag": 0,
+     "asset_return": -0.36787
+    },
+    {
+     "event": "US downgrade / euro crisis",
+     "start": "2011-08-01",
+     "end": "2011-10-31",
+     "avg_p_stressed": 0.5727,
+     "share_flagged": 0.56923,
+     "days_to_flag": 3,
+     "asset_return": -0.03046
+    },
+    {
+     "event": "China devaluation selloff",
+     "start": "2015-08-18",
+     "end": "2015-09-30",
+     "avg_p_stressed": 0.36719,
+     "share_flagged": 0.3871,
+     "days_to_flag": 6,
+     "asset_return": -0.09075
+    },
+    {
+     "event": "Volmageddon",
+     "start": "2018-02-01",
+     "end": "2018-02-28",
+     "avg_p_stressed": 0.42228,
+     "share_flagged": 0.42105,
+     "days_to_flag": 4,
+     "asset_return": -0.03937
+    },
+    {
+     "event": "COVID crash",
+     "start": "2020-02-20",
+     "end": "2020-04-30",
+     "avg_p_stressed": 0.85894,
+     "share_flagged": 0.88,
+     "days_to_flag": 7,
+     "asset_return": -0.14311
+    },
+    {
+     "event": "2022 rate shock",
+     "start": "2022-01-03",
+     "end": "2022-10-31",
+     "avg_p_stressed": 0.14393,
+     "share_flagged": 0.11962,
+     "days_to_flag": 116,
+     "asset_return": -0.18399
+    }
+   ]
+  },
+  {
+   "ticker": "ZN=F",
+   "name": "US 10-year Treasury note",
+   "out_of_sample_start": "2003-09-29",
+   "metrics": {
+    "buy_and_hold": {
+     "cagr": -0.00325,
+     "volatility": 0.05919,
+     "sharpe": -0.0254,
+     "max_drawdown": -0.25743,
+     "total_return": -0.07234,
+     "years": 23.07143,
+     "calmar": -0.01262,
+     "time_invested": 1.0,
+     "switches": 0
+    },
+    "hmm_filter": {
+     "cagr": -0.00314,
+     "volatility": 0.04874,
+     "sharpe": -0.04022,
+     "max_drawdown": -0.24796,
+     "total_return": -0.07005,
+     "years": 23.07143,
+     "calmar": -0.01267,
+     "time_invested": 0.83781,
+     "switches": 287
+    },
+    "vol_rule": {
+     "cagr": -0.00354,
+     "volatility": 0.0396,
+     "sharpe": -0.0697,
+     "max_drawdown": -0.17985,
+     "total_return": -0.0785,
+     "years": 23.07143,
+     "calmar": -0.01967,
+     "time_invested": 0.53922,
+     "switches": 342
+    },
+    "hmm_lookahead": {
+     "cagr": 0.00471,
+     "volatility": 0.04075,
+     "sharpe": 0.13557,
+     "max_drawdown": -0.16526,
+     "total_return": 0.11439,
+     "years": 23.07143,
+     "calmar": 0.02847,
+     "time_invested": 0.78655,
+     "switches": 47
+    }
+   },
+   "threshold_sensitivity": [
+    {
+     "threshold": 0.3,
+     "sharpe": -0.01455,
+     "cagr": -0.00164,
+     "max_drawdown": -0.18839
+    },
+    {
+     "threshold": 0.5,
+     "sharpe": -0.04022,
+     "cagr": -0.00314,
+     "max_drawdown": -0.24796
+    },
+    {
+     "threshold": 0.7,
+     "sharpe": -0.02114,
+     "cagr": -0.00245,
+     "max_drawdown": -0.27294
+    }
+   ],
+   "full_sample": {
+    "k": 3,
+    "names": [
+     "calm",
+     "normal",
+     "stressed"
+    ],
+    "bic": {
+     "1": 6133.22809,
+     "2": 5055.67898,
+     "3": 4944.90253
+    },
+    "transition": [
+     [
+      0.99082,
+      0.00918,
+      0.0
+     ],
+     [
+      0.0057,
+      0.98011,
+      0.01419
+     ],
+     [
+      0.0,
+      0.02609,
+      0.97391
+     ]
+    ],
+    "annual_vol": [
+     0.0355,
+     0.05239,
+     0.0925
+    ],
+    "annual_mean": [
+     -0.01008,
+     0.0368,
+     -0.04706
+    ],
+    "expected_duration_days": [
+     108.94612,
+     50.26454,
+     38.32253
+    ]
+   },
+   "walk_forward_k": {
+    "2": 7,
+    "3": 40
+   },
+   "regime_stats_oos": [
+    {
+     "regime": "calm",
+     "share_of_days": 0.46835,
+     "annual_return": 0.00373,
+     "annual_vol": 0.03826
+    },
+    {
+     "regime": "normal",
+     "share_of_days": 0.36859,
+     "annual_return": 0.06139,
+     "annual_vol": 0.05362
+    },
+    {
+     "regime": "stressed",
+     "share_of_days": 0.16305,
+     "annual_return": -0.16945,
+     "annual_vol": 0.10318
+    }
+   ],
+   "events": [
+    {
+     "event": "Global financial crisis",
+     "start": "2008-09-15",
+     "end": "2009-03-31",
+     "avg_p_stressed": 0.75645,
+     "share_flagged": 0.83942,
+     "days_to_flag": 0,
+     "asset_return": 0.06078
+    },
+    {
+     "event": "US downgrade / euro crisis",
+     "start": "2011-08-01",
+     "end": "2011-10-31",
+     "avg_p_stressed": 0.31657,
+     "share_flagged": 0.24615,
+     "days_to_flag": 4,
+     "asset_return": 0.02685
+    },
+    {
+     "event": "China devaluation selloff",
+     "start": "2015-08-18",
+     "end": "2015-09-30",
+     "avg_p_stressed": 0.21011,
+     "share_flagged": 0.19355,
+     "days_to_flag": 28,
+     "asset_return": 0.00758
+    },
+    {
+     "event": "Volmageddon",
+     "start": "2018-02-01",
+     "end": "2018-02-28",
+     "avg_p_stressed": 0.00328,
+     "share_flagged": 0.0,
+     "days_to_flag": null,
+     "asset_return": -0.00758
+    },
+    {
+     "event": "COVID crash",
+     "start": "2020-02-20",
+     "end": "2020-04-30",
+     "avg_p_stressed": 0.35296,
+     "share_flagged": 0.32,
+     "days_to_flag": 18,
+     "asset_return": 0.06091
+    },
+    {
+     "event": "2022 rate shock",
+     "start": "2022-01-03",
+     "end": "2022-10-31",
+     "avg_p_stressed": 0.56864,
+     "share_flagged": 0.60766,
+     "days_to_flag": 57,
+     "asset_return": -0.15234
+    }
+   ]
+  },
+  {
+   "ticker": "GC=F",
+   "name": "Gold",
+   "out_of_sample_start": "2003-09-15",
+   "metrics": {
+    "buy_and_hold": {
+     "cagr": 0.10412,
+     "volatility": 0.18341,
+     "sharpe": 0.63209,
+     "max_drawdown": -0.44364,
+     "total_return": 8.87014,
+     "years": 23.11508,
+     "calmar": 0.2347,
+     "time_invested": 1.0,
+     "switches": 0
+    },
+    "hmm_filter": {
+     "cagr": 0.07826,
+     "volatility": 0.15395,
+     "sharpe": 0.56657,
+     "max_drawdown": -0.43816,
+     "total_return": 4.70691,
+     "years": 23.11508,
+     "calmar": 0.17861,
+     "time_invested": 0.857,
+     "switches": 268
+    },
+    "vol_rule": {
+     "cagr": 0.04312,
+     "volatility": 0.10813,
+     "sharpe": 0.44461,
+     "max_drawdown": -0.33916,
+     "total_return": 1.65359,
+     "years": 23.11508,
+     "calmar": 0.12715,
+     "time_invested": 0.50747,
+     "switches": 314
+    },
+    "hmm_lookahead": {
+     "cagr": 0.12791,
+     "volatility": 0.14607,
+     "sharpe": 0.89734,
+     "max_drawdown": -0.28084,
+     "total_return": 15.15615,
+     "years": 23.11508,
+     "calmar": 0.45546,
+     "time_invested": 0.90661,
+     "switches": 49
+    }
+   },
+   "threshold_sensitivity": [
+    {
+     "threshold": 0.3,
+     "sharpe": 0.52305,
+     "cagr": 0.06884,
+     "max_drawdown": -0.43239
+    },
+    {
+     "threshold": 0.5,
+     "sharpe": 0.56657,
+     "cagr": 0.07826,
+     "max_drawdown": -0.43816
+    },
+    {
+     "threshold": 0.7,
+     "sharpe": 0.59035,
+     "cagr": 0.08631,
+     "max_drawdown": -0.4483
+    }
+   ],
+   "full_sample": {
+    "k": 3,
+    "names": [
+     "calm",
+     "normal",
+     "stressed"
+    ],
+    "bic": {
+     "1": 20343.05966,
+     "2": 19159.88295,
+     "3": 19045.23098
+    },
+    "transition": [
+     [
+      0.98337,
+      0.01361,
+      0.00301
+     ],
+     [
+      0.01465,
+      0.97562,
+      0.00973
+     ],
+     [
+      0.00277,
+      0.05923,
+      0.938
+     ]
+    ],
+    "annual_vol": [
+     0.11368,
+     0.17494,
+     0.36357
+    ],
+    "annual_mean": [
+     0.11464,
+     0.15822,
+     -0.26445
+    ],
+    "expected_duration_days": [
+     60.14392,
+     41.0235,
+     16.12887
+    ]
+   },
+   "walk_forward_k": {
+    "2": 8,
+    "3": 39
+   },
+   "regime_stats_oos": [
+    {
+     "regime": "calm",
+     "share_of_days": 0.47777,
+     "annual_return": 0.15891,
+     "annual_vol": 0.11176
+    },
+    {
+     "regime": "normal",
+     "share_of_days": 0.37837,
+     "annual_return": 0.17505,
+     "annual_vol": 0.17785
+    },
+    {
+     "regime": "stressed",
+     "share_of_days": 0.14386,
+     "annual_return": -0.29963,
+     "annual_vol": 0.33102
+    }
+   ],
+   "events": [
+    {
+     "event": "Global financial crisis",
+     "start": "2008-09-15",
+     "end": "2009-03-31",
+     "avg_p_stressed": 0.46691,
+     "share_flagged": 0.37956,
+     "days_to_flag": 0,
+     "asset_return": 0.21347
+    },
+    {
+     "event": "US downgrade / euro crisis",
+     "start": "2011-08-01",
+     "end": "2011-10-31",
+     "avg_p_stressed": 0.60498,
+     "share_flagged": 0.58462,
+     "days_to_flag": 9,
+     "asset_return": 0.0589
+    },
+    {
+     "event": "China devaluation selloff",
+     "start": "2015-08-18",
+     "end": "2015-09-30",
+     "avg_p_stressed": 0.0091,
+     "share_flagged": 0.0,
+     "days_to_flag": null,
+     "asset_return": -0.00277
+    },
+    {
+     "event": "Volmageddon",
+     "start": "2018-02-01",
+     "end": "2018-02-28",
+     "avg_p_stressed": 0.00629,
+     "share_flagged": 0.0,
+     "days_to_flag": null,
+     "asset_return": -0.01755
+    },
+    {
+     "event": "COVID crash",
+     "start": "2020-02-20",
+     "end": "2020-04-30",
+     "avg_p_stressed": 0.62665,
+     "share_flagged": 0.68,
+     "days_to_flag": 8,
+     "asset_return": 0.04771
+    },
+    {
+     "event": "2022 rate shock",
+     "start": "2022-01-03",
+     "end": "2022-10-31",
+     "avg_p_stressed": 0.03303,
+     "share_flagged": 0.00478,
+     "days_to_flag": 65,
+     "asset_return": -0.10276
+    }
+   ]
+  },
+  {
+   "ticker": "CL=F",
+   "name": "WTI crude oil",
+   "out_of_sample_start": "2003-09-08",
+   "metrics": {
+    "buy_and_hold": {
+     "cagr": 0.04703,
+     "volatility": 0.4302,
+     "sharpe": 0.32528,
+     "max_drawdown": -0.9311,
+     "total_return": 1.89681,
+     "years": 23.14286,
+     "calmar": 0.05051,
+     "time_invested": 1.0,
+     "switches": 0
+    },
+    "hmm_filter": {
+     "cagr": 0.03476,
+     "volatility": 0.32334,
+     "sharpe": 0.26785,
+     "max_drawdown": -0.79314,
+     "total_return": 1.20494,
+     "years": 23.14286,
+     "calmar": 0.04382,
+     "time_invested": 0.91084,
+     "switches": 162
+    },
+    "vol_rule": {
+     "cagr": 0.04922,
+     "volatility": 0.22139,
+     "sharpe": 0.32783,
+     "max_drawdown": -0.76228,
+     "total_return": 2.04042,
+     "years": 23.14286,
+     "calmar": 0.06457,
+     "time_invested": 0.53121,
+     "switches": 325
+    },
+    "hmm_lookahead": {
+     "cagr": 0.05381,
+     "volatility": 0.32944,
+     "sharpe": 0.3242,
+     "max_drawdown": -0.80649,
+     "total_return": 2.36311,
+     "years": 23.14286,
+     "calmar": 0.06672,
+     "time_invested": 0.95593,
+     "switches": 20
+    }
+   },
+   "threshold_sensitivity": [
+    {
+     "threshold": 0.3,
+     "sharpe": 0.26983,
+     "cagr": 0.03604,
+     "max_drawdown": -0.78601
+    },
+    {
+     "threshold": 0.5,
+     "sharpe": 0.26785,
+     "cagr": 0.03476,
+     "max_drawdown": -0.79314
+    },
+    {
+     "threshold": 0.7,
+     "sharpe": 0.26144,
+     "cagr": 0.03186,
+     "max_drawdown": -0.78703
+    }
+   ],
+   "full_sample": {
+    "k": 3,
+    "names": [
+     "calm",
+     "normal",
+     "stressed"
+    ],
+    "bic": {
+     "1": 31962.79116,
+     "2": 29534.75644,
+     "3": 29200.43273
+    },
+    "transition": [
+     [
+      0.98173,
+      0.01826,
+      0.0
+     ],
+     [
+      0.02418,
+      0.96884,
+      0.00698
+     ],
+     [
+      0.0,
+      0.06378,
+      0.93622
+     ]
+    ],
+    "annual_vol": [
+     0.24567,
+     0.42876,
+     1.32838
+    ],
+    "annual_mean": [
+     0.26651,
+     -0.15402,
+     -0.99355
+    ],
+    "expected_duration_days": [
+     54.74662,
+     32.08742,
+     15.67863
+    ]
+   },
+   "walk_forward_k": {
+    "2": 19,
+    "3": 28
+   },
+   "regime_stats_oos": [
+    {
+     "regime": "calm",
+     "share_of_days": 0.59414,
+     "annual_return": 0.2095,
+     "annual_vol": 0.26919
+    },
+    {
+     "regime": "normal",
+     "share_of_days": 0.3167,
+     "annual_return": -0.00499,
+     "annual_vol": 0.37387
+    },
+    {
+     "regime": "stressed",
+     "share_of_days": 0.08916,
+     "annual_return": -0.86284,
+     "annual_vol": 1.07475
+    }
+   ],
+   "events": [
+    {
+     "event": "Global financial crisis",
+     "start": "2008-09-15",
+     "end": "2009-03-31",
+     "avg_p_stressed": 0.90453,
+     "share_flagged": 0.9708,
+     "days_to_flag": 1,
+     "asset_return": -0.50919
+    },
+    {
+     "event": "US downgrade / euro crisis",
+     "start": "2011-08-01",
+     "end": "2011-10-31",
+     "avg_p_stressed": 0.23808,
+     "share_flagged": 0.21538,
+     "days_to_flag": 7,
+     "asset_return": -0.02623
+    },
+    {
+     "event": "China devaluation selloff",
+     "start": "2015-08-18",
+     "end": "2015-09-30",
+     "avg_p_stressed": 0.56345,
+     "share_flagged": 0.58065,
+     "days_to_flag": 9,
+     "asset_return": 0.0769
+    },
+    {
+     "event": "Volmageddon",
+     "start": "2018-02-01",
+     "end": "2018-02-28",
+     "avg_p_stressed": 0.00385,
+     "share_flagged": 0.0,
+     "days_to_flag": null,
+     "asset_return": -0.04774
+    },
+    {
+     "event": "COVID crash",
+     "start": "2020-02-20",
+     "end": "2020-04-30",
+     "avg_p_stressed": 0.77608,
+     "share_flagged": 0.79592,
+     "days_to_flag": 11,
+     "asset_return": -0.64646
+    },
+    {
+     "event": "2022 rate shock",
+     "start": "2022-01-03",
+     "end": "2022-10-31",
+     "avg_p_stressed": 0.09463,
+     "share_flagged": 0.08134,
+     "days_to_flag": 58,
+     "asset_return": 0.15051
+    }
+   ]
+  }
+ ],
+ "spreadtrader_by_regime": {
+  "start": "2012-01-03",
+  "rows": [
+   {
+    "regime": "calm",
+    "share_of_days": 0.54808,
+    "spread_annual_return": 0.00159,
+    "spread_sharpe": 0.57348,
+    "sp500_annual_return": 0.03845,
+    "sp500_sharpe": 0.3587
+   },
+   {
+    "regime": "normal",
+    "share_of_days": 0.4156,
+    "spread_annual_return": 0.00136,
+    "spread_sharpe": 0.4082,
+    "sp500_annual_return": 0.21738,
+    "sp500_sharpe": 1.20566
+   },
+   {
+    "regime": "stressed",
+    "share_of_days": 0.03632,
+    "spread_annual_return": 0.00542,
+    "spread_sharpe": 1.38399,
+    "sp500_annual_return": 0.61075,
+    "sp500_sharpe": 1.2909
+   }
+  ]
+ }
+}
