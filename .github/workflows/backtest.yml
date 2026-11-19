@@ -1,0 +1,30 @@
+name: backtest
+# Downloads fresh prices, re-fits every walk-forward HMM, re-runs the strategies
+# and commits the results the dashboard reads. Every Saturday, or by hand.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 4 * * 6"
+permissions:
+  contents: write
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install (including SpreadTrader, for the spread-engine-by-regime analysis)
+        run: pip install -r requirements.txt yfinance statsmodels scipy git+https://github.com/HarshJ05/spreadtrader
+      - name: Download daily futures prices
+        run: python -m regimelab.data --start 2000-01-01
+      - name: Run study
+        run: python -m regimelab.run
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data results/RESULTS.md
+          git diff --cached --quiet || git commit -m "Update regime results"
+          git push
