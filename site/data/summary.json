@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-19 15:10 UTC",
+ "generated_at": "2026-11-21 12:59 UTC",
  "data": {
   "first_date": "2000-08-23",
-  "last_date": "2026-11-19"
+  "last_date": "2026-11-20"
  },
  "cost_bps": 2.0,
  "assets": [
@@ -12,67 +12,67 @@
    "out_of_sample_start": "2003-09-11",
    "metrics": {
     "buy_and_hold": {
-     "cagr": 0.08938,
-     "volatility": 0.18714,
-     "sharpe": 0.55123,
+     "cagr": 0.08633,
+     "volatility": 0.18732,
+     "sharpe": 0.53589,
      "max_drawdown": -0.57113,
-     "total_return": 6.30118,
-     "years": 23.22222,
-     "calmar": 0.1565,
+     "total_return": 5.84262,
+     "years": 23.22619,
+     "calmar": 0.15115,
      "time_invested": 1.0,
      "switches": 0
     },
     "hmm_filter": {
-     "cagr": 0.09048,
-     "volatility": 0.14465,
-     "sharpe": 0.67148,
+     "cagr": 0.08743,
+     "volatility": 0.14489,
+     "sharpe": 0.65123,
      "max_drawdown": -0.27285,
-     "total_return": 6.47463,
-     "years": 23.22222,
-     "calmar": 0.33161,
-     "time_invested": 0.93865,
-     "switches": 100
+     "total_return": 6.00518,
+     "years": 23.22619,
+     "calmar": 0.32041,
+     "time_invested": 0.93849,
+     "switches": 101
     },
     "vol_rule": {
-     "cagr": 0.03365,
-     "volatility": 0.08974,
-     "sharpe": 0.41379,
+     "cagr": 0.03364,
+     "volatility": 0.08973,
+     "sharpe": 0.41375,
      "max_drawdown": -0.21714,
      "total_return": 1.15661,
-     "years": 23.22222,
-     "calmar": 0.15496,
-     "time_invested": 0.53059,
+     "years": 23.22619,
+     "calmar": 0.15494,
+     "time_invested": 0.5305,
      "switches": 243
     },
     "hmm_lookahead": {
-     "cagr": 0.13051,
-     "volatility": 0.138,
-     "sharpe": 0.95822,
+     "cagr": 0.12733,
+     "volatility": 0.13825,
+     "sharpe": 0.93636,
      "max_drawdown": -0.24735,
-     "total_return": 16.26423,
-     "years": 23.22222,
-     "calmar": 0.52764,
-     "time_invested": 0.94173,
-     "switches": 28
+     "total_return": 15.17993,
+     "years": 23.22619,
+     "calmar": 0.5148,
+     "time_invested": 0.94157,
+     "switches": 29
     }
    },
    "threshold_sensitivity": [
     {
      "threshold": 0.3,
-     "sharpe": 0.69092,
-     "cagr": 0.09049,
+     "sharpe": 0.66985,
+     "cagr": 0.08743,
      "max_drawdown": -0.28282
     },
     {
      "threshold": 0.5,
-     "sharpe": 0.67148,
-     "cagr": 0.09048,
+     "sharpe": 0.65123,
+     "cagr": 0.08743,
      "max_drawdown": -0.27285
     },
     {
      "threshold": 0.7,
-     "sharpe": 0.67879,
-     "cagr": 0.09388,
+     "sharpe": 0.65908,
+     "cagr": 0.09082,
      "max_drawdown": -0.2966
     }
    ],
@@ -84,41 +84,41 @@
      "stressed"
     ],
     "bic": {
-     "1": 21334.79868,
-     "2": 18583.55379,
-     "3": 17981.96049
+     "1": 21348.76996,
+     "2": 18591.87456,
+     "3": 17994.72655
     },
     "transition": [
      [
-      0.96751,
-      0.03248,
+      0.96754,
+      0.03245,
       1e-05
      ],
      [
-      0.03393,
-      0.95839,
-      0.00769
+      0.03395,
+      0.95817,
+      0.00788
      ],
      [
       0.0,
-      0.04996,
-      0.95004
+      0.04963,
+      0.95037
      ]
     ],
     "annual_vol": [
-     0.08409,
-     0.19,
-     0.49382
+     0.08414,
+     0.19016,
+     0.49249
     ],
     "annual_mean": [
-     0.2857,
-     -0.06361,
-     -0.64101
+     0.28572,
+     -0.06654,
+     -0.65458
     ],
     "expected_duration_days": [
-     30.77524,
-     24.03137,
-     20.01502
+     30.81035,
+     23.90478,
+     20.15056
     ]
    },
    "walk_forward_k": {
@@ -128,21 +128,21 @@
    "regime_stats_oos": [
     {
      "regime": "calm",
-     "share_of_days": 0.53469,
+     "share_of_days": 0.5346,
      "annual_return": 0.18827,
      "annual_vol": 0.08539
     },
     {
      "regime": "normal",
-     "share_of_days": 0.40311,
-     "annual_return": 0.0225,
-     "annual_vol": 0.18665
+     "share_of_days": 0.40304,
+     "annual_return": 0.01954,
+     "annual_vol": 0.18674
     },
     {
      "regime": "stressed",
-     "share_of_days": 0.0622,
-     "annual_return": -0.38791,
-     "annual_vol": 0.52476
+     "share_of_days": 0.06236,
+     "annual_return": -0.41247,
+     "annual_vol": 0.52487
     }
    ],
    "events": [
@@ -208,67 +208,67 @@
    "out_of_sample_start": "2003-09-29",
    "metrics": {
     "buy_and_hold": {
-     "cagr": -0.00325,
-     "volatility": 0.05919,
-     "sharpe": -0.0254,
+     "cagr": -0.00274,
+     "volatility": 0.05921,
+     "sharpe": -0.01674,
      "max_drawdown": -0.25743,
-     "total_return": -0.07234,
-     "years": 23.07143,
-     "calmar": -0.01262,
+     "total_return": -0.06136,
+     "years": 23.0754,
+     "calmar": -0.01065,
      "time_invested": 1.0,
      "switches": 0
     },
     "hmm_filter": {
-     "cagr": -0.00314,
-     "volatility": 0.04874,
-     "sharpe": -0.04022,
+     "cagr": -0.00263,
+     "volatility": 0.04878,
+     "sharpe": -0.02969,
      "max_drawdown": -0.24796,
-     "total_return": -0.07005,
-     "years": 23.07143,
-     "calmar": -0.01267,
-     "time_invested": 0.83781,
+     "total_return": -0.05904,
+     "years": 23.0754,
+     "calmar": -0.01062,
+     "time_invested": 0.83783,
      "switches": 287
     },
     "vol_rule": {
      "cagr": -0.00354,
-     "volatility": 0.0396,
+     "volatility": 0.03959,
      "sharpe": -0.0697,
      "max_drawdown": -0.17985,
      "total_return": -0.0785,
-     "years": 23.07143,
-     "calmar": -0.01967,
-     "time_invested": 0.53922,
+     "years": 23.0754,
+     "calmar": -0.01966,
+     "time_invested": 0.53912,
      "switches": 342
     },
     "hmm_lookahead": {
-     "cagr": 0.00471,
-     "volatility": 0.04075,
-     "sharpe": 0.13557,
+     "cagr": 0.00489,
+     "volatility": 0.04082,
+     "sharpe": 0.13999,
      "max_drawdown": -0.16526,
-     "total_return": 0.11439,
-     "years": 23.07143,
-     "calmar": 0.02847,
-     "time_invested": 0.78655,
+     "total_return": 0.11923,
+     "years": 23.0754,
+     "calmar": 0.02961,
+     "time_invested": 0.78676,
      "switches": 47
     }
    },
    "threshold_sensitivity": [
     {
      "threshold": 0.3,
-     "sharpe": -0.01455,
-     "cagr": -0.00164,
+     "sharpe": -0.00307,
+     "cagr": -0.00113,
      "max_drawdown": -0.18839
     },
     {
      "threshold": 0.5,
-     "sharpe": -0.04022,
-     "cagr": -0.00314,
+     "sharpe": -0.02969,
+     "cagr": -0.00263,
      "max_drawdown": -0.24796
     },
     {
      "threshold": 0.7,
-     "sharpe": -0.02114,
-     "cagr": -0.00245,
+     "sharpe": -0.0113,
+     "cagr": -0.00194,
      "max_drawdown": -0.27294
     }
    ],
@@ -280,9 +280,9 @@
      "stressed"
     ],
     "bic": {
-     "1": 6133.22809,
-     "2": 5055.67898,
-     "3": 4944.90253
+     "1": 6138.5699,
+     "2": 5061.7092,
+     "3": 4951.18215
     },
     "transition": [
      [
@@ -291,30 +291,30 @@
       0.0
      ],
      [
-      0.0057,
-      0.98011,
-      0.01419
+      0.00571,
+      0.98003,
+      0.01426
      ],
      [
       0.0,
-      0.02609,
-      0.97391
+      0.02601,
+      0.97399
      ]
     ],
     "annual_vol": [
-     0.0355,
-     0.05239,
-     0.0925
+     0.03551,
+     0.05246,
+     0.09249
     ],
     "annual_mean": [
-     -0.01008,
-     0.0368,
-     -0.04706
+     -0.01014,
+     0.03778,
+     -0.0468
     ],
     "expected_duration_days": [
-     108.94612,
-     50.26454,
-     38.32253
+     108.91627,
+     50.08343,
+     38.44593
     ]
    },
    "walk_forward_k": {
@@ -324,19 +324,19 @@
    "regime_stats_oos": [
     {
      "regime": "calm",
-     "share_of_days": 0.46835,
+     "share_of_days": 0.46827,
      "annual_return": 0.00373,
      "annual_vol": 0.03826
     },
     {
      "regime": "normal",
-     "share_of_days": 0.36859,
-     "annual_return": 0.06139,
-     "annual_vol": 0.05362
+     "share_of_days": 0.3687,
+     "annual_return": 0.06275,
+     "annual_vol": 0.05369
     },
     {
      "regime": "stressed",
-     "share_of_days": 0.16305,
+     "share_of_days": 0.16303,
      "annual_return": -0.16945,
      "annual_vol": 0.10318
     }
@@ -404,67 +404,67 @@
    "out_of_sample_start": "2003-09-15",
    "metrics": {
     "buy_and_hold": {
-     "cagr": 0.10412,
-     "volatility": 0.18341,
-     "sharpe": 0.63209,
+     "cagr": 0.10154,
+     "volatility": 0.18367,
+     "sharpe": 0.61873,
      "max_drawdown": -0.44364,
-     "total_return": 8.87014,
-     "years": 23.11508,
-     "calmar": 0.2347,
+     "total_return": 8.35444,
+     "years": 23.11905,
+     "calmar": 0.22888,
      "time_invested": 1.0,
      "switches": 0
     },
     "hmm_filter": {
-     "cagr": 0.07826,
-     "volatility": 0.15395,
-     "sharpe": 0.56657,
+     "cagr": 0.07825,
+     "volatility": 0.15393,
+     "sharpe": 0.56652,
      "max_drawdown": -0.43816,
      "total_return": 4.70691,
-     "years": 23.11508,
-     "calmar": 0.17861,
-     "time_invested": 0.857,
+     "years": 23.11905,
+     "calmar": 0.17858,
+     "time_invested": 0.85685,
      "switches": 268
     },
     "vol_rule": {
      "cagr": 0.04312,
-     "volatility": 0.10813,
-     "sharpe": 0.44461,
+     "volatility": 0.10812,
+     "sharpe": 0.44457,
      "max_drawdown": -0.33916,
      "total_return": 1.65359,
-     "years": 23.11508,
-     "calmar": 0.12715,
-     "time_invested": 0.50747,
+     "years": 23.11905,
+     "calmar": 0.12713,
+     "time_invested": 0.50738,
      "switches": 314
     },
     "hmm_lookahead": {
-     "cagr": 0.12791,
-     "volatility": 0.14607,
-     "sharpe": 0.89734,
+     "cagr": 0.12877,
+     "volatility": 0.14593,
+     "sharpe": 0.90327,
      "max_drawdown": -0.28084,
-     "total_return": 15.15615,
-     "years": 23.11508,
-     "calmar": 0.45546,
-     "time_invested": 0.90661,
+     "total_return": 15.45048,
+     "years": 23.11905,
+     "calmar": 0.45851,
+     "time_invested": 0.90645,
      "switches": 49
     }
    },
    "threshold_sensitivity": [
     {
      "threshold": 0.3,
-     "sharpe": 0.52305,
-     "cagr": 0.06884,
+     "sharpe": 0.52301,
+     "cagr": 0.06883,
      "max_drawdown": -0.43239
     },
     {
      "threshold": 0.5,
-     "sharpe": 0.56657,
-     "cagr": 0.07826,
+     "sharpe": 0.56652,
+     "cagr": 0.07825,
      "max_drawdown": -0.43816
     },
     {
      "threshold": 0.7,
-     "sharpe": 0.59035,
-     "cagr": 0.08631,
+     "sharpe": 0.5903,
+     "cagr": 0.0863,
      "max_drawdown": -0.4483
     }
    ],
@@ -476,41 +476,41 @@
      "stressed"
     ],
     "bic": {
-     "1": 20343.05966,
-     "2": 19159.88295,
-     "3": 19045.23098
+     "1": 20364.02665,
+     "2": 19169.98367,
+     "3": 19053.72035
     },
     "transition": [
      [
-      0.98337,
-      0.01361,
-      0.00301
+      0.98335,
+      0.01368,
+      0.00297
      ],
      [
-      0.01465,
-      0.97562,
-      0.00973
+      0.01459,
+      0.97565,
+      0.00975
      ],
      [
-      0.00277,
-      0.05923,
-      0.938
+      0.00276,
+      0.05872,
+      0.93852
      ]
     ],
     "annual_vol": [
-     0.11368,
-     0.17494,
-     0.36357
+     0.11362,
+     0.17478,
+     0.36457
     ],
     "annual_mean": [
-     0.11464,
-     0.15822,
-     -0.26445
+     0.11404,
+     0.16052,
+     -0.29506
     ],
     "expected_duration_days": [
-     60.14392,
-     41.0235,
-     16.12887
+     60.06167,
+     41.07446,
+     16.26644
     ]
    },
    "walk_forward_k": {
@@ -520,21 +520,21 @@
    "regime_stats_oos": [
     {
      "regime": "calm",
-     "share_of_days": 0.47777,
+     "share_of_days": 0.47769,
      "annual_return": 0.15891,
      "annual_vol": 0.11176
     },
     {
      "regime": "normal",
-     "share_of_days": 0.37837,
+     "share_of_days": 0.3783,
      "annual_return": 0.17505,
      "annual_vol": 0.17785
     },
     {
      "regime": "stressed",
-     "share_of_days": 0.14386,
-     "annual_return": -0.29963,
-     "annual_vol": 0.33102
+     "share_of_days": 0.14401,
+     "annual_return": -0.31539,
+     "annual_vol": 0.33185
     }
    ],
    "events": [
@@ -600,67 +600,67 @@
    "out_of_sample_start": "2003-09-08",
    "metrics": {
     "buy_and_hold": {
-     "cagr": 0.04703,
-     "volatility": 0.4302,
-     "sharpe": 0.32528,
+     "cagr": 0.0472,
+     "volatility": 0.43017,
+     "sharpe": 0.32564,
      "max_drawdown": -0.9311,
-     "total_return": 1.89681,
-     "years": 23.14286,
-     "calmar": 0.05051,
+     "total_return": 1.90789,
+     "years": 23.14683,
+     "calmar": 0.05069,
      "time_invested": 1.0,
      "switches": 0
     },
     "hmm_filter": {
-     "cagr": 0.03476,
-     "volatility": 0.32334,
-     "sharpe": 0.26785,
+     "cagr": 0.03492,
+     "volatility": 0.32332,
+     "sharpe": 0.26834,
      "max_drawdown": -0.79314,
-     "total_return": 1.20494,
-     "years": 23.14286,
-     "calmar": 0.04382,
-     "time_invested": 0.91084,
+     "total_return": 1.21337,
+     "years": 23.14683,
+     "calmar": 0.04403,
+     "time_invested": 0.91085,
      "switches": 162
     },
     "vol_rule": {
-     "cagr": 0.04922,
-     "volatility": 0.22139,
-     "sharpe": 0.32783,
+     "cagr": 0.04921,
+     "volatility": 0.22137,
+     "sharpe": 0.3278,
      "max_drawdown": -0.76228,
      "total_return": 2.04042,
-     "years": 23.14286,
-     "calmar": 0.06457,
-     "time_invested": 0.53121,
+     "years": 23.14683,
+     "calmar": 0.06456,
+     "time_invested": 0.53112,
      "switches": 325
     },
     "hmm_lookahead": {
-     "cagr": 0.05381,
-     "volatility": 0.32944,
-     "sharpe": 0.3242,
+     "cagr": 0.05397,
+     "volatility": 0.32941,
+     "sharpe": 0.32467,
      "max_drawdown": -0.80649,
-     "total_return": 2.36311,
-     "years": 23.14286,
-     "calmar": 0.06672,
-     "time_invested": 0.95593,
+     "total_return": 2.37598,
+     "years": 23.14683,
+     "calmar": 0.06692,
+     "time_invested": 0.95594,
      "switches": 20
     }
    },
    "threshold_sensitivity": [
     {
      "threshold": 0.3,
-     "sharpe": 0.26983,
-     "cagr": 0.03604,
+     "sharpe": 0.27033,
+     "cagr": 0.03621,
      "max_drawdown": -0.78601
     },
     {
      "threshold": 0.5,
-     "sharpe": 0.26785,
-     "cagr": 0.03476,
+     "sharpe": 0.26834,
+     "cagr": 0.03492,
      "max_drawdown": -0.79314
     },
     {
      "threshold": 0.7,
-     "sharpe": 0.26144,
-     "cagr": 0.03186,
+     "sharpe": 0.26191,
+     "cagr": 0.03202,
      "max_drawdown": -0.78703
     }
    ],
@@ -672,41 +672,41 @@
      "stressed"
     ],
     "bic": {
-     "1": 31962.79116,
-     "2": 29534.75644,
-     "3": 29200.43273
+     "1": 31966.72223,
+     "2": 29538.07138,
+     "3": 29204.16124
     },
     "transition": [
      [
-      0.98173,
-      0.01826,
+      0.98171,
+      0.01829,
       0.0
      ],
      [
-      0.02418,
-      0.96884,
+      0.02424,
+      0.96878,
       0.00698
      ],
      [
       0.0,
-      0.06378,
-      0.93622
+      0.0638,
+      0.9362
      ]
     ],
     "annual_vol": [
-     0.24567,
-     0.42876,
-     1.32838
+     0.24565,
+     0.42868,
+     1.32824
     ],
     "annual_mean": [
-     0.26651,
-     -0.15402,
-     -0.99355
+     0.26645,
+     -0.15346,
+     -0.99385
     ],
     "expected_duration_days": [
-     54.74662,
-     32.08742,
-     15.67863
+     54.6755,
+     32.02722,
+     15.6744
     ]
    },
    "walk_forward_k": {
@@ -716,19 +716,19 @@
    "regime_stats_oos": [
     {
      "regime": "calm",
-     "share_of_days": 0.59414,
+     "share_of_days": 0.59403,
      "annual_return": 0.2095,
      "annual_vol": 0.26919
     },
     {
      "regime": "normal",
-     "share_of_days": 0.3167,
-     "annual_return": -0.00499,
-     "annual_vol": 0.37387
+     "share_of_days": 0.31682,
+     "annual_return": -0.00446,
+     "annual_vol": 0.37378
     },
     {
      "regime": "stressed",
-     "share_of_days": 0.08916,
+     "share_of_days": 0.08915,
      "annual_return": -0.86284,
      "annual_vol": 1.07475
     }
@@ -796,7 +796,7 @@
   "rows": [
    {
     "regime": "calm",
-    "share_of_days": 0.54808,
+    "share_of_days": 0.54793,
     "spread_annual_return": 0.00159,
     "spread_sharpe": 0.57348,
     "sp500_annual_return": 0.03845,
@@ -804,11 +804,11 @@
    },
    {
     "regime": "normal",
-    "share_of_days": 0.4156,
+    "share_of_days": 0.41575,
     "spread_annual_return": 0.00136,
-    "spread_sharpe": 0.4082,
-    "sp500_annual_return": 0.21738,
-    "sp500_sharpe": 1.20566
+    "spread_sharpe": 0.40806,
+    "sp500_annual_return": 0.20688,
+    "sp500_sharpe": 1.1428
    },
    {
     "regime": "stressed",

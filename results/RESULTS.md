@@ -1,15 +1,15 @@
 # RegimeLab results
 
-Generated 2026-11-19 15:10 UTC.
+Generated 2026-11-21 12:59 UTC.
 
 ## S&P 500 E-mini (ES=F), out-of-sample from 2003-09-11
 
 | Strategy | CAGR | Volatility | Sharpe | Max drawdown | Time invested |
 |---|---|---|---|---|---|
-| Buy & hold | 8.9% | 18.7% | 0.55 | -57.1% | 100.0% |
-| HMM regime filter (honest) | 9.0% | 14.5% | 0.67 | -27.3% | 93.9% |
-| Simple volatility rule | 3.4% | 9.0% | 0.41 | -21.7% | 53.1% |
-| HMM with look-ahead (cheating) | 13.1% | 13.8% | 0.96 | -24.7% | 94.2% |
+| Buy & hold | 8.6% | 18.7% | 0.54 | -57.1% | 100.0% |
+| HMM regime filter (honest) | 8.7% | 14.5% | 0.65 | -27.3% | 93.8% |
+| Simple volatility rule | 3.4% | 9.0% | 0.41 | -21.7% | 53.0% |
+| HMM with look-ahead (cheating) | 12.7% | 13.8% | 0.94 | -24.7% | 94.2% |
 
 Full-sample model: 3 regimes (calm, normal, stressed); annual vol calm 8%, normal 19%, stressed 49%; average duration calm 31 days, normal 24 days, stressed 20 days
 
@@ -17,8 +17,8 @@ Full-sample model: 3 regimes (calm, normal, stressed); annual vol calm 8%, norma
 
 | Strategy | CAGR | Volatility | Sharpe | Max drawdown | Time invested |
 |---|---|---|---|---|---|
-| Buy & hold | -0.3% | 5.9% | -0.03 | -25.7% | 100.0% |
-| HMM regime filter (honest) | -0.3% | 4.9% | -0.04 | -24.8% | 83.8% |
+| Buy & hold | -0.3% | 5.9% | -0.02 | -25.7% | 100.0% |
+| HMM regime filter (honest) | -0.3% | 4.9% | -0.03 | -24.8% | 83.8% |
 | Simple volatility rule | -0.4% | 4.0% | -0.07 | -18.0% | 53.9% |
 | HMM with look-ahead (cheating) | 0.5% | 4.1% | 0.14 | -16.5% | 78.7% |
 
@@ -28,10 +28,10 @@ Full-sample model: 3 regimes (calm, normal, stressed); annual vol calm 4%, norma
 
 | Strategy | CAGR | Volatility | Sharpe | Max drawdown | Time invested |
 |---|---|---|---|---|---|
-| Buy & hold | 10.4% | 18.3% | 0.63 | -44.4% | 100.0% |
+| Buy & hold | 10.2% | 18.4% | 0.62 | -44.4% | 100.0% |
 | HMM regime filter (honest) | 7.8% | 15.4% | 0.57 | -43.8% | 85.7% |
 | Simple volatility rule | 4.3% | 10.8% | 0.44 | -33.9% | 50.7% |
-| HMM with look-ahead (cheating) | 12.8% | 14.6% | 0.90 | -28.1% | 90.7% |
+| HMM with look-ahead (cheating) | 12.9% | 14.6% | 0.90 | -28.1% | 90.6% |
 
 Full-sample model: 3 regimes (calm, normal, stressed); annual vol calm 11%, normal 17%, stressed 36%; average duration calm 60 days, normal 41 days, stressed 16 days
 
@@ -62,5 +62,5 @@ Full-sample model: 3 regimes (calm, normal, stressed); annual vol calm 25%, norm
 | Regime | Share of days | Spread engine annual return | Spread engine Sharpe | S&P 500 Sharpe |
 |---|---|---|---|---|
 | calm | 54.8% | 0.2% | 0.57 | 0.36 |
-| normal | 41.6% | 0.1% | 0.41 | 1.21 |
+| normal | 41.6% | 0.1% | 0.41 | 1.14 |
 | stressed | 3.6% | 0.5% | 1.38 | 1.29 |
